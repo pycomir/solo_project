@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+  line-height: 1.7;
+  color: $paragraph-color;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: solid;
+}
+
+.wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

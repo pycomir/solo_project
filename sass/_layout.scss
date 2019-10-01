@@ -1,0 +1,29 @@
+
+
+
+
+.sidebar {
+  flex: 1;
+  background-color: #191919;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 6;
+  background: #ffffff;
+  height: 100vh;
+  overflow: scroll;
+  .navbar {
+    height: 60px;
+    position: fixed;
+  }
+    
+  .general_statistic {
+    height: 1056px;
+  }
+
+  .links {
+    height: 1056px;
+
+  }
+}
