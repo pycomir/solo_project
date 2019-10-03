@@ -4,6 +4,16 @@
   flex: 2;
   flex-direction: column;
   background-color: blue;
+  header {
+    flex: 1;
+    justify-content: space-around;
+    .ham-icon {
+      display: none;
+    }
+  }
+  nav {
+    flex: 10;
+  }
 }
 
 .main-section {
@@ -22,9 +32,22 @@
 
 @media (max-width: 576px) {
   .main-container {
-    flex-direction: column;
-  }
-  .sidebar {
-    display: none;
+    display: block;
+    .sidebar {
+      height: auto;
+      header {
+        .ham-icon {
+          display: block;
+        }
+      }
+      nav {
+        .main-menu {
+          display: none;
+        }
+        .main-menu.active{
+          display: block;
+        }
+      }
+    }
   }
 }
