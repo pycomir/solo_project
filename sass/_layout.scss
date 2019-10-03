@@ -1,29 +1,30 @@
 
 
-
-
 .sidebar {
-  flex: 1;
-  background-color: #191919;
-  height: 100vh;
+  flex: 2;
+  flex-direction: column;
+  background-color: blue;
 }
 
-.main-content {
-  flex: 6;
-  background: #ffffff;
-  height: 100vh;
-  overflow: scroll;
-  .navbar {
-    height: 60px;
-    position: fixed;
+.main-section {
+  flex: 10;
+  background-color: grey;
+  flex-direction: column;
+  .top-bar {
+    flex: 1;
+    background-color: green;
   }
-    
-  .general_statistic {
-    height: 1056px;
+  .main-content {
+    flex: 10;
+    overflow-y: scroll;
   }
+}
 
-  .links {
-    height: 1056px;
-
+@media (max-width: 576px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    display: none;
   }
 }

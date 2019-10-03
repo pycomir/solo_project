@@ -7,11 +7,20 @@ body {
   color: $paragraph-color;
 }
 
-.container {
-  width: 100%;
+.main-container {
   margin: 0;
   padding: 0;
-  border: solid;
+  height: 100vh;
+  width: 100vw;
+  //border: solid red;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  //border: solid;
 }
 
 .wrapper {
